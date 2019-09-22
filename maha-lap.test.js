@@ -69,4 +69,9 @@ describe("Test Maha-Lap", () => {
     const result = MahaLap.tamnaiWithStory("⊙▂⊙?");
     expect(result).toEqual(10);
   });
+
+  test("Test Tamnai with story 3 space bar", () => {
+    const result = MahaLap.tamnaiWithStory("   ");
+    expect(result).toEqual(6);
+  });
 });
