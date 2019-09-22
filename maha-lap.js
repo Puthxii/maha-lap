@@ -1,0 +1,16 @@
+class MahaLap {
+  static tamnaiWithDay(day) {
+    switch (true) {
+      case day === "จันทร์":
+        return 2;
+        break;
+      case day === "อังคาร":
+        return 3;
+        break;
+      default:
+        return 1;
+    }
+  }
+}
+
+module.exports = MahaLap;
