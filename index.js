@@ -4,6 +4,9 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => res.send("เจริญ พร"));
+
+app.use("/public", express.static("public"));
+
 app.get("/namo", (req, res) => {
   const day = req.query.day;
   const story = req.query.story;
