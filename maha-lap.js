@@ -30,7 +30,7 @@ class MahaLap {
     for (let i = 0; i <= length; i++) {
       sum = sum + i;
     }
-    return sum;
+    return sum % 100;
   }
 }
 
