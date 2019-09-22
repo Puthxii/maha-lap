@@ -81,7 +81,13 @@ describe("Test Maha-Lap", () => {
     expect(result).toEqual(0.98);
   });
 
-  test("Test Tamnai with time กลาง random = 0.4 return 0.4", () => {
+  test("Test Tamnai with time กลาง random = 0.5 return 0.5", () => {
+    global.Math.random = jest.fn(() => 0.5);
+    const result = MahaLap.tamnaiWithTime("กลางวัน");
+    expect(result).toEqual(0.5);
+  });
+
+  test("Test Tamnai with time กลาง random = 0.4 return 0.5", () => {
     global.Math.random = jest.fn(() => 0.4);
     const result = MahaLap.tamnaiWithTime("กลางวัน");
     expect(result).toEqual(0.5);
@@ -91,6 +97,12 @@ describe("Test Maha-Lap", () => {
     global.Math.random = jest.fn(() => 0.32);
     const result = MahaLap.tamnaiWithTime("กลางคืน");
     expect(result).toEqual(0.32);
+  });
+
+  test("Test Tamnai with time กลาง random = 0.5 return 0.5", () => {
+    global.Math.random = jest.fn(() => 0.5);
+    const result = MahaLap.tamnaiWithTime("กลางคืน");
+    expect(result).toEqual(0.5);
   });
 
   test("Test Tamnai with time กลาง random = 0.6 return 0.5", () => {
