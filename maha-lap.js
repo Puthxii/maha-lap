@@ -22,6 +22,9 @@ class MahaLap {
       case day === "สงกรานต์":
         return 13;
         break;
+      case day === "ฮาโลวีน":
+        return 31;
+        break;
       default:
         return 1;
     }
