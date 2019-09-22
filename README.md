@@ -22,4 +22,12 @@
 ### ในฝันเป็นเวลาไหน
 
 - กลางวัน Random 1-100 ถ้ามากกว่า 50 ให้เอาเลขนั้น ถ้าน้อยกว่าให้เอา 50
+  number > 50
+  true = number
+  false = 50
 - กลางคืน Random 1-100 ถ้าน้อยกว่า 50 ให้เอาเลขนั้น ถ้ามากกว่าให้เอา 50
+  number < 50
+  true = number
+  false = 50
+
+const randomNumber = Math.floor(Math.random() \* 100);
