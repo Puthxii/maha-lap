@@ -1,6 +1,6 @@
 class MahaLap {
   static tamnaiWithDay(day) {
-    switch (day) {
+    switch (true) {
       case day === "จันทร์":
         return 2;
       case day === "อังคาร":
